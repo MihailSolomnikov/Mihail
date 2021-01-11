@@ -36,3 +36,13 @@ class Student_one(ZaoStudent):
     def operation(self) -> str:
         return "{Result of the Student_one is ZaoStudent}"
 
+
+def client_code(creator: Abiturient) -> None:
+
+    print(f"Client: it still works.\n"
+          f"{creator.some_operation()}", end="")
+
+
+if __name__ == "__main__":
+    print("App: Launched")
+    client_code(Student())
